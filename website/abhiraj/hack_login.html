@@ -26,7 +26,7 @@
 
 		}
 		div{
-			background-color: #4e4e8c
+			background-color: #4e4e8c;
 		}
 		th{
 			text-align: left;
@@ -49,21 +49,19 @@
 			padding: 3px; 
 			font-size: 18px;
 			border-style: outset;
-			color: black;
+			color:#4e4e8c;
 			width: 150px;
 			border-collapse: collapse;
 			border-width: 2px;
-			background-color: 
 		}
 		.button:hover {
 			border-style: inset;
-			color: #4e4e8c; 
-		}
-		a.s{
-			color:#4e4e8c;
-		}
-		.s:hover {
 			color: green;
+		}
+		input{
+			font-style: italic;
+			border-style: all;
+			border-width: 3px;
 		}
 
 	</style>
@@ -71,20 +69,22 @@
 <body>
 	<div><img src="Hack.png"></div>
 	<p id="h">
-		<u><b>Login</b></u>
+		<u><b>&nbsp;Login&nbsp;</b></u>
 	</p>
 	<hr>
+	<form action="" method="post">
 	<p class="a">
-		Your Name : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<input type="text" placeholder="Your user name">
+		Your user name :
+		<input type="text" placeholder="User ID" required>
 	</p>
 	<p class="a">
 		Password : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<input type="Password" placeholder="Your secrete text">
+		<input type="Password" placeholder="Your secrete text" required>
 	</p>
 	<p class="a">
-		<button class="button"><a class="s" href=""><i><b>Sign in</b></i></a></button>
+		<a class="s" href=""><button class="button"><i><b>Sign in</b></i></button></a>
 	</p>
+	</form>
 	<div>
 		<table>
 			<tr>
@@ -101,7 +101,7 @@
 			</tr>
 			<tr>
 				<td>NIELIT Bhavan,</td>
-				<td><a class="link" href="http://meity.gov.in">meity.gov.in</a></td>
+				<td><a class="link" href="C:\Users\abhir_000\Desktop\hackathn\hack_home.html">NIELIT home</a></td>
 			</tr>
 			<tr>
 				<td>Plot No. 3, PSP Pocket, Sector-8,</td>
@@ -121,6 +121,7 @@
 			</tr>
 			<tr>
 				<td>Fax:- 91-11-2436 3335</td>
+				<td><a class="link" href="http://meity.gov.in">meity.gov.in</a></td>
 			</tr>
 			<tr>
 				<td>Email:- contact@nielit.gov.in</td>
