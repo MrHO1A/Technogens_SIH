@@ -1,5 +1,4 @@
 import java.util.Random;
-import org.apache.
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -17,7 +16,5 @@ public class otp_gen_class {
         id = String.format("%04d", random.nextInt(10000));
         return id;
     }
-    public boolean SEND_OTP(String number, String otp){
-       
-    }
+  
 }
