@@ -21,6 +21,7 @@ public void doGet(HttpServletRequest request, HttpServletResponse response)throw
     String mobile = request.getParameter("mobile");
     PrintWriter pr = response.getWriter();
     System.out.println(mobile);
+    
     pr.write(mobile);
 }
     
