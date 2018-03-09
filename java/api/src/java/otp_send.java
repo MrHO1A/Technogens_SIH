@@ -6,6 +6,7 @@
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import org.json.simple.*;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -20,10 +21,11 @@ public class otp_send extends HttpServlet {
 public void doGet(HttpServletRequest request, HttpServletResponse response)throws IOException,ServletException{
     String mobile = request.getParameter("mobile");
     PrintWriter pr = response.getWriter();
+    JSONObject js = new JSONObject();
+    String[] name = {"aman","aman"};
+    js.put("number", mobile);
+    js.put("arra",name)
     System.out.println(mobile);
-    
-    pr.write(mobile);
+    pr.write(js.toString());
 }
-    
-
 }
