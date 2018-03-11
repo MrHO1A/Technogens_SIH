@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- BootStrap Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link  id="themes" rel="stylesheet" href="css/light.css">
+    <link rel="icon" href="favicon.png">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <title>Digital Locker</title>
+    <style type="">
+        .margin_top{
+            margin-top: 15px;
+        }
+        html{
+            height: 100%;
+        }
+        body{
+            background: linear-gradient(to bottom right, #005c97, #363795);
+        }
+        .bottom_b{
+            border-bottom: solid 0.2px white !important;
+        }
+        .trans{
+            background-color: transparent !important;
+            border: none ;
+        }
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: white !important;
+            opacity: 1; /* Firefox */
+        }
+        .glyphicon{
+            color: white !important;
+        }
+        .w_color{
+            color: white;
+        }
+        input{
+            border-left: white 0.2px solid !important;
+        }
+        a:hover{
+            color: white !important;
+        }
+        .btn-block{
+            background: white !important;
+            font-size: 18px;
+            font-weight: bold;
+            color: #005C97;
+        }
+        .vertical-center {
+            min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+            min-height: 100vh; /* These two lines are counted as one :-)       */
+
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container vertical-center">
+    <div class="row">
+        <div class="col-md-offset-4 col-lg-offset-4 col-md-4 col-lg-4">
+            <h2 class="text-center w_color">LOGIN</h2>
+            <form method="post" action="/login">
+                <div class="input-group bottom_b">
+                    <span class="input-group-addon trans" id="basic-addon1"><span class="glyphicon glyphicon-user "></span></span>
+                    <input type="text" name="username" id="user_name_inpt" class="form-control input_c w_color trans" title="Username" placeholder="Enter your Username" required="required">
+                </div>
+                <div class="input-group margin_top">
+                    <span class="input-group-addon trans" id="basic-addon1"><span class="glyphicon glyphicon-lock"></span></span>
+                    <input type="password" name="username" id="password" class="form-control input_c w_color trans" title="Username" placeholder="Enter your Password" required="required">
+                </div>
+                <p class="text-right"><a class="w_color">Forgot Password?</a></p>
+                <button class="btn btn-block">LOGIN</button>
+                <p class="margin_top text-center"><a class="w_color">Not A Member? Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/theme-manager.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- BootStrap Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link  id="themes" rel="stylesheet" href="css/light.css">
+	<link rel="icon" href="favicon.png">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+	<title>Digital Locker</title>
+	<style type="">
+		.margin_top{
+			margin-top: 10px;
+		}
+		.bt_s{
+			border-radius: 25px;
+			background-color: transparent !important;
+			border: 2px #2aed98 solid;
+			padding-left: 20px;
+			padding-right: 20px;
+			transition: all ease 0.32s;
+		}
+		.bt_s:hover{
+			color: black !important;
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+		.absolute{
+			margin: auto;
+			position: absolute;
+			top: 0;left: 0; bottom: 0; right: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			 <div class="col-md-offset-4 col-lg-offset-4 col-md-4 col-sm-offset-4 col-sm-4 col-lg-4 absolute resp" >
+			 	<form action="/login" method="POST">
+			 		<h2 class="text-center">Digital Locker</h2>
+			 		<div class="input-group">
+      <div class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>
+      <input type="text" class="form-control" id="username" placeholder="Enter Your Username">
+    </div>
+    <div class="input-group margin_top">
+      <div class="input-group-addon"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></div>
+      <input type="password" class="form-control" id="password" placeholder="Enter Your Password">
+    </div>
+    <p style="text-align: right;"><a href="forgot.html">Forgot Password?</a></p>
+   <p style="text-align:center;"> <button type="button" class="btn margin_top bt_s">Login</button></p>
+			 	</form>
+			 	<form action="/otp" method="POST">
+<h4 style="text-align:center;"><b>Request OTP</b></h4>
+    <div class="input-group margin_top">
+      <div class="input-group-addon"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span></div>
+      <input type="number" class="form-control" id="password" placeholder="Enter Your Phone Number">
+    </div>
+    <p style="color:red;text-align: right;">*Enter Mobile Number Registered With Adhaar</p>
+   <p style="text-align:center;"> <button type="button" class="btn margin_top bt_s">Send OTP</button></p>
+			 	</form>
+			 </div>
+		</div>
+	</div>
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/theme-manager.js"></script>
+</body>
+</html>
