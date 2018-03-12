@@ -24,11 +24,19 @@ public class request_otp extends HttpServlet {
         PrintWriter pr = res.getWriter();
         random_otp Random_OTP = new random_otp();
         try{
+<<<<<<< HEAD
+        System.out.println(Random_OTP.generate_otp(opt.get("adhaar"),opt.get("mobile_send"),hash));
+=======
         System.out.println(Random_OTP.generate_otp(opt.get("adhaar"),opt.get("mobile"),hash));
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
         }
         catch(Exception e){
             System.out.println(e);
         }
+<<<<<<< HEAD
+        opt.remove("mobile_send");
+=======
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
         JSONObject jso = new JSONObject(opt);
         res.setContentType("application/json");
         pr.write(jso.toString());

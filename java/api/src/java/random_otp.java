@@ -12,6 +12,16 @@ public class random_otp {
     
     //Function To Send OTP using MSG91 api
     public void send_to_number(String mobile,String otp) throws UnirestException{
+<<<<<<< HEAD
+        String message = "Your OTP is "+otp+", Enter this to verify documents. Thank You";
+        HttpResponse<String> response = null;
+        try {
+            response = Unirest.get("http://api.msg91.com/api/sendhttp.php?sender=DIGILK&route=4&mobiles="+mobile+"&authkey=201456AW2xZxBwSrS5a9fedb4&country=91&message="+URLEncoder.encode(message, "UTF-8")).asString();
+        } catch (UnsupportedEncodingException ex) {
+            Logger.getLogger(random_otp.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        System.out.println("OTP SENT TO -> "+mobile);
+=======
         String message = "Your OTP is "+otp+" enter this to verify documents";
         HttpResponse<String> response = null;
         try {
@@ -19,6 +29,7 @@ public class random_otp {
         } catch (UnsupportedEncodingException ex) {
             Logger.getLogger(random_otp.class.getName()).log(Level.SEVERE, null, ex);
         }
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
         System.out.println(response.getBody().toString());
     }
     
