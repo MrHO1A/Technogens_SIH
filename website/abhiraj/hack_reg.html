@@ -4,7 +4,7 @@
 	<title>Registration Form</title>
 	<style type="text/css">
 		body{
-			background: linear-gradient(to bottom , #d8fffd, #96f9ff);
+			background: linear-gradient(to bottom , #e2fffc, #affbff );
 		}
 		p#head{
 			text-align: center;
@@ -13,43 +13,27 @@
 			color:  #161e8e;
 		}
 		table.register{
-			width: 1250px;
+			width: 1070px;
 			font-size: 22px;
-<<<<<<< HEAD
-			border-style: double;
-			background-color: #96beff;
-			padding: 20px;
-			border-width: 7px;
-			border-color: #4e4e8c;
-=======
 			border-style: ridge;
 			background: linear-gradient(to bottom, #ceeeff, #99cfff);
+			color: black;
 			padding: 20px;
-			border-width: 8px;
-			border-color: #52bef9;
-
->>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
-
+			border-width: 10px;
+			border-color: #56a5ff;
 		}
 		td.title{
 			text-align: right;
 			font-style: bold;
 		}
 		td.dot{
-			color: #96beff; 
+			color: #99cfff; 
 		}
-<<<<<<< HEAD
-		select.p{
-			border-style: all;
-			border-width: 3px;
-			height: 33px;
-=======
 		select{
 			border-style: inset;
 			border-width: 4px;
 			height: 35px;
->>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
-			width: 60px;
+			width: 65px;
 			text-align: center;
 			font-family: Aparajita;
 			font-size: 25px;
@@ -82,19 +66,12 @@
 			height: 30px;
 			width: 164px;
 			text-align: center;
-<<<<<<< HEAD
-			font-family: Book Antiqua;
-			font-size: 17px;
-			text-orientation: center;
-			font-style: bold;
-=======
 			font-family: Lucida Fax;
 			font-size: 18px;		
 			text-align: center;				
 			text-orientation: center;
 			font-style: bold;
 			border-color: #e0fbfc;
->>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
 		}
 		input.year{
 			border-style: all;
@@ -102,19 +79,12 @@
 			height: 27px;
 			width: 60px;
 			text-align: center;
-<<<<<<< HEAD
-			font-family: Book Antiqua;
-			font-size: 17px;
-			text-orientation: center;
-			font-style: bold;
-=======
 			font-family: Lucida Fax;
 			font-size: 18px;		
 			text-align: center;				
 			text-orientation: center;
 			font-style: bold;
 			border-color: #e0fbfc;
->>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
 		}
 		
 		input.gender{
@@ -125,16 +95,10 @@
 			height: 27px;
 			width: 100px;
 			text-align: center;
-<<<<<<< HEAD
-			font-family: Book Antiqua;
-			font-size: 17px;
-			font-style: bold;
-=======
 			font-family: Lucida Fax;
 			font-size: 18px;
 			font-style: bold;
 			border-color: #e0fbfc;
->>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
 		}
 		input.password{
 			text-orientation: center;
@@ -201,7 +165,9 @@
          margin: 0; 
         }
         hr{
-        	border-color: #363795;		
+        	border-style: ridge;
+        	border-width: 1px;
+        	border-color: #005c97;		
         }
 		
 	</style>
@@ -211,6 +177,7 @@
 	<p id="head">
 		<b>&nbsp; Registration Form &nbsp;</b>
 		<hr>
+		<br>
 	</p>
 	<p>
 	<form method="post">
@@ -222,11 +189,7 @@
 			         Name :
 			    </td>
 				<td>
-<<<<<<< HEAD
-					<input class="n" type="text" placeholder="Full name " required>
-=======
 					<input class="normal" type="text" placeholder="Full name" name="name" id="name" required>
->>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
 				</td>
 				<td class="dot">
 					.
@@ -250,11 +213,7 @@
 					 Father's name :
 				</td>
 				<td>
-<<<<<<< HEAD
-					<input type="text" class="n" placeholder=" Full name " required>
-=======
 					<input class="normal" type="text"  placeholder=" Full name " name="father" id="father" required>
->>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
 				</td>
 				
 			</tr>
@@ -264,11 +223,7 @@
 				     Mother's name :
 				</td>
 				<td>
-<<<<<<< HEAD
-					<input class="n" type="text" placeholder=" Full name " required>
-=======
 					<input class="normal" type="text" placeholder=" Full name " name="mother" id="mother" required>
->>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
 				</td>
 				<td class="dot">
 					.
@@ -277,7 +232,7 @@
 					 Aadhar number :
 				</td>
 				<td>
-					<input class="normal" type="text" name="aadhar" pattern="[1-9]{1}[0-9]{11}" placeholder="12 digit phone no." title="Please enter your 12 digit Aadhar no." name="aadhar" id="aadhar" required>
+					<input class="normal" type="text" name="aadhar" pattern="[1-9]{1}[0-9]{11}" placeholder="12 digit phone no." title="Please enter your 12 digit Aadhar no." name="aadhar" id="aadhar" value="" required>
 				</td>
 
 			</tr>
