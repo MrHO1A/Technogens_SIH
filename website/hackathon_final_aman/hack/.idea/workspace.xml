@@ -11,16 +11,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file leaf-file-name="sent_otp.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sent_otp.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
+=======
+      <file leaf-file-name="sent_otp.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sent_otp.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
               <caret line="77" column="40" lean-forward="false" selection-start-line="77" selection-start-column="40" selection-end-line="77" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="anukriti.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/anukriti.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -36,6 +44,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="464">
               <caret line="80" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+=======
+      <file leaf-file-name="hori.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hori.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="72" column="22" lean-forward="true" selection-start-line="71" selection-start-column="12" selection-end-line="74" selection-end-column="18" />
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
               <folding />
             </state>
           </provider>
@@ -54,8 +69,13 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="328">
               <caret line="53" column="21" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+=======
+            <state relative-caret-position="1122">
+              <caret line="66" column="32" lean-forward="false" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
               <folding />
             </state>
           </provider>
@@ -76,18 +96,30 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
               <folding>
                 <marker date="1520841234403" expanded="true" signature="1:165" ph="&lt;IfModule mod_rewrite.c&gt;" />
               </folding>
+=======
+              <folding />
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="verify_otp.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/verify_otp.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
               <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+=======
+      <file leaf-file-name="verify_otp.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/verify_otp.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
               <folding />
             </state>
           </provider>
@@ -96,8 +128,13 @@
       <file leaf-file-name="otp_verif_fun.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/class/otp_verif_fun.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="85">
               <caret line="5" column="44" lean-forward="false" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+=======
+            <state relative-caret-position="255">
+              <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
               <folding />
             </state>
           </provider>
@@ -125,13 +162,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/class/otp_verif_fun.php" />
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/verify_otp.php" />
         <option value="$PROJECT_DIR$/stylesheets/hori.html" />
         <option value="$PROJECT_DIR$/hori.html" />
         <option value="$PROJECT_DIR$/sent_otp.php" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/anukriti.html" />
         <option value="$PROJECT_DIR$/class/otp_verif_fun.php" />
+=======
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
       </list>
     </option>
   </component>
@@ -143,10 +187,17 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< HEAD
     <option name="x" value="241" />
     <option name="y" value="-15" />
     <option name="width" value="1040" />
     <option name="height" value="772" />
+=======
+    <option name="x" value="-18" />
+    <option name="y" value="-13" />
+    <option name="width" value="1040" />
+    <option name="height" value="784" />
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -163,8 +214,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scope" />
       <pane id="Scratches" />
+=======
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -172,16 +226,43 @@
               <item name="hack" type="b2602c69:ProjectViewProjectNode" />
               <item name="hack" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+<<<<<<< HEAD
+=======
+            <path>
+              <item name="hack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hack" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="class" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hack" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hack" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="stylesheets" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
+=======
+      <pane id="Scope" />
+      <pane id="Scratches" />
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="C:/xampp/htdocs/hack" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
@@ -205,6 +286,7 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="JavaScript Debug.anukriti.html">
     <configuration name="anukriti.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/hack/anukriti.html" />
     <configuration name="hori.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/hack/hori.html" />
@@ -216,6 +298,13 @@
       <list size="2">
         <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.anukriti.html" />
         <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.hori.html" />
+=======
+  <component name="RunManager">
+    <configuration name="hori.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/hack/hori.html" />
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.hori.html" />
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
       </list>
     </recent_temporary>
   </component>
@@ -236,18 +325,30 @@
       <workItem from="1520700815213" duration="1410000" />
       <workItem from="1520749627764" duration="7510000" />
       <workItem from="1520775203220" duration="4297000" />
+<<<<<<< HEAD
       <workItem from="1520841386704" duration="138000" />
       <workItem from="1520841572487" duration="6259000" />
+=======
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="24608000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+    <option name="totallyTimeSpent" value="18211000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1040" height="784" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -306,6 +407,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/hori.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1224">
@@ -322,6 +424,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1122">
@@ -342,9 +446,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
           <folding>
             <marker date="1520841234403" expanded="true" signature="1:165" ph="&lt;IfModule mod_rewrite.c&gt;" />
           </folding>
+=======
+          <folding />
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
         </state>
       </provider>
     </entry>
@@ -359,7 +467,11 @@
     <entry file="file://$PROJECT_DIR$/class/otp_verif_fun.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
+<<<<<<< HEAD
           <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+=======
+          <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
           <folding />
         </state>
       </provider>
@@ -380,6 +492,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/hori.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1224">
@@ -400,11 +513,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1122">
           <caret line="66" column="32" lean-forward="false" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
+=======
+    <entry file="file://$PROJECT_DIR$/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Digital_Locker.html">
+=======
+    <entry file="file://$PROJECT_DIR$/sent_otp.php">
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -412,6 +535,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -426,6 +550,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+=======
+    <entry file="file://$PROJECT_DIR$/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="15" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
           <folding />
         </state>
       </provider>
@@ -438,6 +568,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/index2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1088">
@@ -447,6 +578,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sent_otp.php">
+=======
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -454,6 +588,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1122">
@@ -462,6 +597,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
     <entry file="file://$PROJECT_DIR$/Digital_Locker.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -470,6 +607,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -496,6 +634,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
     <entry file="file://$PROJECT_DIR$/index2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1088">
@@ -504,6 +644,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/sent_otp.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -532,10 +673,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="15" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="66" column="32" lean-forward="false" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -550,6 +698,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1088">
           <caret line="64" column="48" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/verify_otp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
           <folding />
         </state>
       </provider>
@@ -564,6 +718,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hori.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="464">
           <caret line="80" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
           <folding />
@@ -590,18 +745,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="549">
           <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+=======
+        <state relative-caret-position="368">
+          <caret line="72" column="22" lean-forward="true" selection-start-line="71" selection-start-column="12" selection-end-line="74" selection-end-column="18" />
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sent_otp.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="136">
+=======
+        <state relative-caret-position="303">
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
           <caret line="77" column="40" lean-forward="false" selection-start-line="77" selection-start-column="40" selection-end-line="77" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/class/otp_verif_fun.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -618,5 +782,7 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
   </component>
 </project>

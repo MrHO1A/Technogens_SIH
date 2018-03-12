@@ -1,106 +1,167 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Registration Form</title>
 	<style type="text/css">
 		body{
-			background-color: #e5f5ff;
+			background: linear-gradient(to bottom , #d8fffd, #96f9ff);
 		}
-		p#h{
+		p#head{
 			text-align: center;
 			font-family: Baskerville Old Face;
 			font-size: 40px;
 			color:  #161e8e;
 		}
 		table.register{
-			width: 1250px;
+			width: 1100px;
 			font-size: 22px;
+<<<<<<< HEAD
 			border-style: double;
 			background-color: #96beff;
 			padding: 20px;
 			border-width: 7px;
 			border-color: #4e4e8c;
+=======
+			border-style: ridge;
+			background: linear-gradient(to bottom, #ceeeff, #99cfff);
+			padding: 20px;
+			border-width: 8px;
+			border-color: #52bef9;
+
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
 
 		}
-		td.t{
+		td.title{
 			text-align: right;
 			font-style: bold;
 		}
 		td.dot{
 			color: #96beff; 
 		}
+<<<<<<< HEAD
 		select.p{
 			border-style: all;
 			border-width: 3px;
 			height: 33px;
+=======
+		select{
+			border-style: inset;
+			border-width: 4px;
+			height: 35px;
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
 			width: 60px;
 			text-align: center;
-			font-family: Bookman Old Style;
-			font-size: 17px;
+			font-family: Aparajita;
+			font-size: 25px;
+			border-color: #e0fbfc;
 		}
 		input.address{
 			border-style: all;
-			border-width: 3px;
-			font-size: 25px;
+			border-width: 4px;
+			font-size: 18px;
 			font-style: bold;
-			font-family: Aparajita;
-			height: 35px;
+			font-family: Lucida Fax;
+			height: 27px;
 			width: 800px;
+			border-color: #e0fbfc;
 		}
-		input.n{
+		input.normal{
 			border-style: all;
-			border-width: 3px;
-			font-size: 25px;
+			border-width: 4px;
+			font-size: 18px;
 			font-style: bold;
-			font-family: Aparajita;
-			height: 33px;
+			font-family: Lucida Fax;
+			height: 27px;
 			text-orientation: center;
+			border-color: #e0fbfc;
+			width: 240px;	
 		}
-		input.o{
+		input.date-year{
 			border-style: all;
-			border-width: 3px;
-			height: 33px;
-			width: 80px;
+			border-width: 4px;
+			height: 30px;
+			width: 164px;
 			text-align: center;
+<<<<<<< HEAD
 			font-family: Book Antiqua;
 			font-size: 17px;
 			text-orientation: center;
 			font-style: bold;
+=======
+			font-family: Lucida Fax;
+			font-size: 18px;		
+			text-align: center;				
+			text-orientation: center;
+			font-style: bold;
+			border-color: #e0fbfc;
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
 		}
-		input.om{
+		input.year{
 			border-style: all;
-			border-width: 3px;
-			height: 33px;
-			width: 120px;
+			border-width: 4px;
+			height: 27px;
+			width: 60px;
 			text-align: center;
+<<<<<<< HEAD
 			font-family: Book Antiqua;
 			font-size: 17px;
 			text-orientation: center;
 			font-style: bold;
+=======
+			font-family: Lucida Fax;
+			font-size: 18px;		
+			text-align: center;				
+			text-orientation: center;
+			font-style: bold;
+			border-color: #e0fbfc;
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
 		}
-		input.g{
+		
+		input.gender{
 			text-orientation: center;
 			border-style: all;
-			border-width: 3px;
+			border-width: 4px;
 			text-align: center;
-			height: 33px;
+			height: 27px;
 			width: 100px;
 			text-align: center;
+<<<<<<< HEAD
 			font-family: Book Antiqua;
 			font-size: 17px;
 			font-style: bold;
+=======
+			font-family: Lucida Fax;
+			font-size: 18px;
+			font-style: bold;
+			border-color: #e0fbfc;
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
 		}
+		input.password{
+			text-orientation: center;
+			border-style: all;
+			border-width: 4px;
+			text-align: left;							
+			height: 27px;
+			width: 240px;		
+			font-family: Aparajita;
+			font-size: 25px;
+			font-style: bold;
+			border-color: #e0fbfc;
+		}
+
+
 		div.last{
-			background-color: #4e4e8c;
+			background: linear-gradient(to bottom right, #005c97, #363795);
 		}
-		.l{
+		th.last-head{
 			text-align: left;
 			padding-left: 5px;
 		}
-		.ll{
+		td.ll{
 			padding-left: 40px;
 
 		}
-		#Last{
+		table#Last{
 			font-size: 18px;
 			width: 1000px;
 			color: white;
@@ -110,11 +171,13 @@
 			color: white;
 		}
 		button{
-			padding: 3px; 
-			font-size: 18px;
+			padding: 0px; 
+			font-size: 27px;
+			text-align: center;
+			font-family: Aparajita;
 			border-style: outset;
-			color:#4e4e8c;
-			width: 150px;
+			color: #0049c1;
+			width: 200px;
 			border-collapse: collapse;
 			border-width: 2px;
 			font-style: italic;
@@ -122,67 +185,100 @@
 		.button:hover {
 			border-style: inset;
 			color: green;
-
+		}
+		input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+         -webkit-appearance: none;
+         -moz-appearance: none;
+         appearance: none;
+         margin: 0; 
+        }
+        input[type=date]::-webkit-inner-spin-button, 
+        input[type=date]::-webkit-outer-spin-button { 
+         -webkit-appearance: none;
+         -moz-appearance: none;
+         appearance: none;
+         margin: 0; 
+        }
+        hr{
+        	border-color: #363795;		
+        }
 		
 	</style>
 </head>
 <body>
 	<div><center><img src="Hack.png"></center></div>
-	<p id="h">
-		<u><b>&nbsp; Registration Form &nbsp;</b></u>
+	<p id="head">
+		<b>&nbsp; Registration Form &nbsp;</b>
+		<hr>
+		<br>
 	</p>
 	<p>
-	<form>
+	<form method="post">
 		<center>	
 		<table class="register">
 			<tr>
 
-				<td class="t">
-				Your Name :
+				<td class="title">
+			         Name :
 			    </td>
 				<td>
+<<<<<<< HEAD
 					<input class="n" type="text" placeholder="Full name " required>
+=======
+					<input class="normal" type="text" placeholder="Full name" name="name" id="name" required>
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
 				</td>
 				<td class="dot">
 					.
 				</td>
-				<td class="t">
-					Your phone number :
+				<td class="title">
+				    Phone number :
 				</td>
 				<td>
-					<select class="p"><option>+91</option></select>
 
-					<input class="n" type="number" placeholder="10 digit phone no." required>	
+					<select>
+						<option>+91</option>
+					</select>
+					<input class="normal" type="text" pattern="[1-9]{1}[0-9]{9}" placeholder="10 digit phone no." title="Please enter your 10 digit phone no." name="phone" id="phone" required>
 					
 				</td>
 
 			</tr>
 			<tr>
 
-				<td class="t">
-					Your father's name :
+				<td class="title">
+					 Father's name :
 				</td>
 				<td>
+<<<<<<< HEAD
 					<input type="text" class="n" placeholder=" Full name " required>
+=======
+					<input class="normal" type="text"  placeholder=" Full name " name="father" id="father" required>
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
 				</td>
 				
 			</tr>
 			<tr>
 
-				<td class="t">
-					Your mother's name :
+				<td class="title">
+				     Mother's name :
 				</td>
 				<td>
+<<<<<<< HEAD
 					<input class="n" type="text" placeholder=" Full name " required>
+=======
+					<input class="normal" type="text" placeholder=" Full name " name="mother" id="mother" required>
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
 				</td>
 				<td class="dot">
 					.
 				</td>
-				<td class="t">
-					Your Aadhar number :
+				<td class="title">
+					 Aadhar number :
 				</td>
 				<td>
-					<input type="number" class="n" placeholder="12 digit phone no." required>
+					<input class="normal" type="text" name="aadhar" pattern="[1-9]{1}[0-9]{11}" placeholder="12 digit phone no." title="Please enter your 12 digit Aadhar no." name="aadhar" id="aadhar" required>
 				</td>
 
 			</tr>
@@ -195,107 +291,20 @@
 			</tr>
 			<tr>
 				
-				<td class="t">
+				<td class="title">
 					Date of Birth :
 				</td>
 				<td>
-					<input class="o" list="date" required placeholder="Date">
-					<datalist id="date">
-
-						<option value="01">01</option>
-						<option value="02">02</option>
-						<option value="03">03</option>
-						<option value="04">04</option>
-						<option value="05">05</option>
-						<option value="06">06</option>
-						<option value="07">07</option>
-						<option value="08">08</option>
-						<option value="09">09</option>
-						<option value="10">10</option>
-						<option value="11">11</option>
-						<option value="12">12</option>
-						<option value="13">13</option>
-						<option value="14">14</option>
-						<option value="15">15</option>
-						<option value="16">16</option>
-						<option value="17">17</option>
-						<option value="18">18</option>
-						<option value="19">19</option>
-						<option value="20">20</option>
-						<option value="21">21</option>
-						<option value="22">22</option>
-						<option value="23">23</option>
-						<option value="24">24</option>
-						<option value="25">25</option>
-						<option value="26">26</option>
-						<option value="27">27</option>
-						<option value="28">28</option>
-						<option value="29">29</option>
-						<option value="30">30</option>
-						<option value="31">31</option>
-
-					</datalist>
-					<input list="months" class="om" required placeholder="Month">
-					<datalist id="months">
-
-						<option>January</option>
-						<option>February</option>
-						<option>March</option>
-						<option>April</option>
-						<option>May</option>
-						<option>June</option>
-						<option>July</option>
-						<option>August</option>
-						<option>September</option>
-						<option>October</option>
-						<option>November</option>
-						<option>December</option>
-
-					</datalist>
-				    </input>
-					<input class="o" list="years" required placeholder="Year">
-					<datalist id="years">
-
-						<option>1990</option>
-						<option>1991</option>
-						<option>1992</option>
-						<option>1993</option>
-						<option>1994</option>
-						<option>1995</option>
-						<option>1996</option>
-						<option>1997</option>
-						<option>1998</option>
-						<option>1999</option>
-						<option>2000</option>
-						<option>2001</option>
-						<option>2002</option>
-						<option>2003</option>
-						<option>2004</option>
-						<option>2005</option>
-						<option>2006</option>
-						<option>2007</option>
-						<option>2008</option>
-						<option>2009</option>
-						<option>2010</option>
-						<option>2011</option>
-						<option>2012</option>
-						<option>2013</option>
-						<option>2014</option>
-						<option>2015</option>
-						<option>2016</option>
-						<option>2017</option>
-						<option>2018</option>
-
-					</datalist></input>
+					<input class="date-year" type="date" list="date" name="dob" id="dob" required>
 				</td>
 				<td class="dot">
 					.
 			    </td>
-				<td class="t">
+				<td class="title">
 					Gender :
 				</td>
 				<td>
-					<input class="g" type="text"  list="gender" required>
+					<input class="gender" type="text"  list="gender" name="gen" id="gen" required>
 					<datalist id="gender">
 						<option>Male</option>
 						<option>Female</option>
@@ -309,75 +318,99 @@
 					.
 				</td>
 			</tr>
+
 			<tr>
-				<td class="t">
-					Your address :
+				<td class="title">
+					Email ID :
+				</td>
+				<td>
+					<input class="normal" type="Email" name="email" id="email" placeholder="Ex. abc@gmail.com" name="email" id="email" required>
+				</td>
+			</tr>
+			<tr>
+				<td class="title">
+					Password :
+				</td>
+				<td>
+					<input class="password" type="password" name="pass" id="pass" 
+					pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Your secret text" required>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="dot">
+					.
+				</td>
+			</tr>
+			<tr>
+				<td class="title">
+					Address :
 				</td>
 				<td colspan="4">
-					<input class="address" type="text" placeholder="Ex. C-10 Prem Nagar, Jabalpur (M.P.)" required>
+					<input class="address" type="text-area" placeholder="Ex. C-10 Prem Nagar, Jabalpur (M.P.)" name="address" id="address" required>
 				</td>	
 			<tr>
-				<td class="t">
+				<td class="title">
 					City pin code :
 				</td>
 				<td>
-					<input type="number" placeholder="Ex. 482001" class="n" required>
+					<input class="normal" type="text" pattern="[1-9]{1}[0-9]{5}" placeholder="Ex. 482001" title="Please enter 6 digit city pin code" name="pin" id="pin" required>
 				</td>
 			</tr>	
-			</tr>
+			</tr>	 	 		
 			<tr>
 				<td class="dot">
 					.
 				</td>
 			</tr>
 			<tr>
-				<td class="t">
-					Your qualification :
+				<td class="title">
+					Qualification :
 				</td>
 				<td>
-					<input class="n" type="text" placeholder="Your degree" required>
+					<input class="normal" type="text" placeholder="Your degree" name="degree" id="degree" required>
 				</td>
 				<td class="dot">
 					.
 				</td>
-				<td class="t">
+				<td class="title">
 					Last institute you studied :
 				</td>
 				<td>
-					<input type="text" placeholder="Your College/Institute" class="n" required>
+					<input class="normal" type="text" placeholder="Your College/Institute" name="college" id="college" required>
 				</td>
 			</tr>
 			<tr>
-				<td class="t">
-					Year you graduated :
+				<td class="title">
+					Year of graduation :
 				</td>
 				<td>
-					<input type="text" placeholder="Year" list="years" class="o" required>
+					<input class="year" type="number" placeholder="Year" min="1990" max="2020" name="gra" id="gra" required>
 				</td>
 				<td class="dot">
 					.
 				</td>
-				<td class="t">
+				<td class="title">
 					Branch/Subjects :
 				</td>
 				<td>
-					<input type="text" placeholder="Ex. BCE or Maths-Physics" class="n" required>
+					<input class="normal" type="text" placeholder="Ex. BCE or Maths-Physics" name="subject" id="subject" required>
 				</td>
 			</tr>
 
 		</table>
 	    </center>
 
-		<p><center><a href=""><button class="button"><b>Submit!</b></button></a></center></p>
+		<p><center><a href=""><button class="button"><b>Submit</b></button></a></center></p>
 	</form>
 	</p>
 	<div class="last">
 		<table id="Last">
 			<tr>
-				<th class="l">
+				<th class="last-head">
 					<b><i>Contact Us :-</i></b>
 				</th>
-				<th class="l">
+				<th class="last-head">
 					<b><i>Useful links :-</i></b>
 				</th>
 			</tr>

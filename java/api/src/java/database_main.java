@@ -33,7 +33,10 @@ public class database_main {
         sb.setCharAt(6, 'X');
         sb.setCharAt(7, 'X');
         map.put("mobile", sb.toString());
+<<<<<<< HEAD
         map.put("mobile_send", mobile);
+=======
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
         return map;
     }
 }

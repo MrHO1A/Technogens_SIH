@@ -3,7 +3,11 @@ require_once "Unirest.php";
 class otp_verif_fun
 {
     //This Is Base Url
+<<<<<<< HEAD
     public $base_url = "http://172.16.86.114:8080/api/";
+=======
+    public $base_url = "http://192.168.1.4:8080/api/";
+>>>>>>> 8e397d9efa1601dfdff478f432a2474838015dec
 
 
     function request_otp($uid,$adhaar){

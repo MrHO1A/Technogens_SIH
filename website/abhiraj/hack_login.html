@@ -4,9 +4,9 @@
 	<title>Login Page</title>
 	<style type="text/css">
 		body{
-			background-color: #e5f5ff;
+			background: linear-gradient(to bottom, #d8fffd, #7afff8);
 		}
-		p#h{
+		p#head{
 			text-align: center;
 			font-family: Baskerville Old Face;
 			font-size: 40px;
@@ -15,18 +15,13 @@
 		hr{
 			border-color: #161e8e;
 		}
-		.a{
+		p.title{
 			text-align: center;
-			font-size: 25px;
-			font-style: italic;
+			font-size: 30px;
+			font-family: Aparajita;
 		}
-		input{
-			height: 30px;
-			font-size: 20px;
-
-		}
-		div{
-			background-color: #4e4e8c;
+		div.last{
+			background: linear-gradient(to bottom, #005c97, #363795)
 		}
 		th{
 			text-align: left;
@@ -37,7 +32,7 @@
 
 		}
 		table{
-			font-size: 18px;
+			font-size: 19px;
 			width: 1000px;
 			color: white;
 			border-spacing: 3px;
@@ -46,11 +41,13 @@
 			color: white;
 		}
 		button{
-			padding: 3px; 
-			font-size: 18px;
+			padding: 1px; 
+			font-size: 25px;
+			text-align: center;
+			font-family: Aparajita;
 			border-style: outset;
-			color:#4e4e8c;
-			width: 150px;
+			color:#0049c1;
+			width: 180px;
 			border-collapse: collapse;
 			border-width: 2px;
 		}
@@ -60,32 +57,38 @@
 		}
 		input{
 			font-style: italic;
-			border-style: all;
-			border-width: 3px;
+			border-style: inset;
+			border-width: 5px;
+			border-color: #e0fbfc;
+			height: 30px;
+			font-size: 20px;
+			width: 250px;	
 		}
 
 	</style>
 </head>
 <body>
-	<div><img src="Hack.png"></div>
-	<p id="h">
-		<u><b>&nbsp;Login&nbsp;</b></u>
+	<div><center><img src="Hack.png"></center></div>
+	<p id="head">
+		<b>&nbsp;Login&nbsp;</b>
 	</p>
 	<hr>
 	<form action="" method="post">
-	<p class="a">
-		Your user name :
-		<input type="text" placeholder="User ID" required>
+	<p class="title">
+		<b><i>User :</i></b>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="Email" placeholder="User email ID" required name="email" id="email">
 	</p>
-	<p class="a">
-		Password : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<input type="Password" placeholder="Your secrete text" required>
+	<p class="title">
+		<b><i>Password :</i></b> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="Password" placeholder="Your secrete text" required name="pass" id="pass">
 	</p>
-	<p class="a">
+	<p class="title">
 		<a class="s" href=""><button class="button"><i><b>Sign in</b></i></button></a>
 	</p>
 	</form>
-	<div>
+	<div class="last">
 		<table>
 			<tr>
 				<th>
