@@ -37,6 +37,12 @@
         .margin-top {
             margin-top: 18px;
         }
+        .border-s{
+            transition: all ease 0.36s;
+        }
+        .border-s:hover{
+            border-radius: 25px;
+        }
     </style>
     </head>
     <body>
@@ -44,11 +50,8 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4 text-center">APPLY NOW</h1>
-            <p class="text-center">
-                <small class="text-muted">Apply For Position Now</small>
-            </p>
             <hr class="my-2">
-            <form method="get">
+            <form method="post" action="./sent_otp">
                 <div class="container margin-top">
                     <div class="row">
                         <!-- Left Row -->
@@ -61,16 +64,21 @@
                             </div>
                             <div class="form-group">
                                 <label>Father's Name:</label>
-                                <div>
-                                    <input class="form-control" placeholder="Enter Father's Name" name="f_name"
+								<div class="input-group">
+                                        <div class="input-group-prepend"><span class="input-group-text">Mr </span></div>
+                                        <input class="form-control" placeholder="Enter Father's Name" name="f_name"
                                            required>
-                                </div>
+                                    </div>
                             </div>
                             <div class="form-group">
                                 <label>Mother's Name:</label>
-                                <div>
-                                    <input class="form-control" placeholder="Enter Mother's Name" name="m_name"
+								<div class="input-group">
+                                        <div class="input-group-prepend"><span class="input-group-text">Mrs </i></span></div>
+                                         <input class="form-control" placeholder="Enter Mother's Name" name="m_name"
                                            required>
+                                    </div>
+                                <div>
+                                   
                                 </div>
                             </div>
                             <div class="form-group">
@@ -94,7 +102,8 @@
                                     </span>
                                     </div>
                                     <select class="form-control" name="gender">
-                                        <option value="M">Male</option>
+                                        <option selected>-SELECT-</option>
+										<option value="M">Male</option>
                                         <option value="F">Female</option>
                                         <option value="O">Other</option>
                                     </select>
@@ -133,11 +142,11 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Address:</label>
-                                <textarea class="form-control" name="address" rows="5"></textarea>
+                                <textarea placeholder="Enter Your Address" class="form-control" name="address" rows="5"></textarea>
                             </div>
                             <div class="form-group">
                                 <label>Pin Code:</label>
-                                <input type="text" name="pin" class="form-control" required
+                                <input type="text" name="pin" class="form-control" required placeholder="XXXXXX" 
                                        title="Please Enter A Valid Indian  Pincode" pattern="^[1-9][0-9]{5}$">
                             </div>
                             <div class="form-group">
@@ -166,14 +175,20 @@
                                        placeholder="Last Institute Attended">
                             </div>
                             <div class="form-group">
-                                <label>Name Of Branch:</label>
-                                <input type="text" class="form-control" name="branch" placeholder="Name Of Branch">
+                                <label>Mobile Number:</label>
+                                 <div class="input-group">
+                                        <div class="input-group-prepend"><span class="input-group-text">+91-</span></div>
+                                       <input type="number" class="form-control" name="mobile" placeholder="Mobile Number">
+                                    </div>
+                                
                             </div>
                         </div>
                     </div>
+                    <p class="text-center">
                     <button type="submit" id=""
-                            class="btn btn-primary btn-block">Verify Documents
+                            class="btn btn-primary btn-lg border-s">Verify Documents
                     </button>
+                    </p>
             </form>
 
         </div>

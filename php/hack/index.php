@@ -1,3 +1,7 @@
+<?php 
+header("location:./reg");
+?>
+
 <!DOCTYPE html>
 <html>
 <head>

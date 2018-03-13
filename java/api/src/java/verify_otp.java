@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.HashMap;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -13,7 +14,7 @@ import org.json.simple.JSONObject;
  * using supplied hash
  */
 public class verify_otp extends HttpServlet {
-    //Will recive two param uid and otp
+    //Will recive two param uid and otp   
     public void doGet(HttpServletRequest req, HttpServletResponse res)throws IOException,ServletException{
         String hash = req.getParameter("uid");
         String otp = req.getParameter("otp");
