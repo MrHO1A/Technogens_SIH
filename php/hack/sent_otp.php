@@ -14,10 +14,11 @@ if ($json_data->result == "true") {
     header("location:./login_digi");
 }
 ?>
+<?php include "header.php"; ?>
     <link id="themes" rel="stylesheet" href="css/bootstrap.min.css">
     <script type="text/javascript" src="js/fontawesome-all.min.js"></script>
 <link rel="stylesheet" href="css/animate.css">
-<?php include "header.php"; ?>
+<?php include "preloader.php"; ?>
     <style type="">
         .margin_top {
             margin-top: 15px;

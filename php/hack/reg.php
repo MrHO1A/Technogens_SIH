@@ -13,6 +13,7 @@
             $('[data-toggle="popover"]').popover()
         })
     </script>
+<?php include "preloader.php"; ?>
     <style type="text/css">
         html {
             height: 100%;
@@ -39,6 +40,7 @@
     </style>
     </head>
     <body>
+    <div class="load"></div>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4 text-center">APPLY NOW</h1>
@@ -124,7 +126,6 @@
                                         </span>
                                         </div>
                                     </div>
-                                    <p><small class="text-info">*Please Enter a valid Adhaar Number</small></p>
                                 </div>
                             </div>
                         </div>
@@ -148,9 +149,9 @@
                                 </span>
                                     </div>
                                     <select class="form-control" name="qualification">
-                                        <option selected>BE</option>
-                                        <option>PG</option>
-                                        <option>PhD</option>
+                                        <option selected value="Bachelor">Bachelor's</option>
+                                        <option value="Post Graduate">Post Graduate</option>
+                                        <option value="Doctorate">Doctorate</option>
                                     </select>
                                 </div>
 
@@ -160,9 +161,9 @@
                                 <input type="number" class="form-control" name="yog" placeholder="Year Of Graduation">
                             </div>
                             <div class="form-group">
-                                <label>Last Institute You Attended:</label>
+                                <label>Last Institute Attended:</label>
                                 <input type="text" class="form-control" name="inst"
-                                       placeholder="Last Institute You Attended">
+                                       placeholder="Last Institute Attended">
                             </div>
                             <div class="form-group">
                                 <label>Name Of Branch:</label>
