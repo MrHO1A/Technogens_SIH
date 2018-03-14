@@ -39,6 +39,17 @@
 			font-size: 25px;
 			border-color: #e0fbfc;
 		}
+		input.phone{
+			border-style: all;
+			border-width: 4px;
+			font-size: 18px;
+			font-style: bold;
+			font-family: Lucida Fax;
+			height: 27px;
+			text-orientation: center;
+			border-color: #e0fbfc;
+			width: 170px;
+		}
 		input.address{
 			border-style: all;
 			border-width: 4px;
@@ -169,11 +180,27 @@
         	border-width: 1px;
         	border-color: #005c97;		
         }
-		
+    
+        }
+        textarea.address{
+        	border-style: inset;
+			border-width: 4px;
+			font-size: 18px;
+			font-style: bold;
+			font-family: Lucida Fax;
+			height: 27px;
+			text-orientation: center;
+			border-color: #e0fbfc;
+			width: 80%;
+			height: 100px;	
+        }
+		img.img{
+			width: 100%;
+		}
 	</style>
 </head>
 <body>
-	<div><center><img src="Hack.png"></center></div>
+	<div><center><img class="img" src="Hack.png"></center></div>
 	<p id="head">
 		<b>&nbsp; Registration Form &nbsp;</b>
 		<hr>
@@ -202,7 +229,7 @@
 					<select>
 						<option>+91</option>
 					</select>
-					<input class="normal" type="text" pattern="[1-9]{1}[0-9]{9}" placeholder="10 digit phone no." title="Please enter your 10 digit phone no." name="phone" id="phone" required>
+					<input class="phone" type="text" pattern="[1-9]{1}[0-9]{9}" placeholder="10 digit phone no." title="Please enter your 10 digit phone no." name="phone" id="phone" required>
 				
 				</td>
 
@@ -213,7 +240,7 @@
 					 Father's name :
 				</td>
 				<td>
-					<input class="normal" type="text"  placeholder=" Full name " name="father" id="father" required>
+					<input class="normal" type="text" placeholder=" Full name " name="father" id="father" required>
 				</td>
 				
 			</tr>
@@ -301,7 +328,7 @@
 					Address :
 				</td>
 				<td colspan="4">
-					<input class="address" type="text-area" placeholder="Ex. C-10 Prem Nagar, Jabalpur (M.P.)" name="address" id="address" required>
+					<textarea class="address" placeholder="Ex. C-10 Prem Nagar, Jabalpur (M.P.)" name="address" id="address" required></textarea>
 				</td>	
 			<tr>
 				<td class="title">
