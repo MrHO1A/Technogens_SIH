@@ -3,7 +3,7 @@ require_once "Unirest.php";
 class otp_verif_fun
 {
     //This Is Base Url
-    public $base_url = "http://172.16.82.103:8888/api/";
+    public $base_url = "http://192.168.1.4:8080/api/";
 
 
     function request_otp($uid,$adhaar){
@@ -15,6 +15,12 @@ class otp_verif_fun
     function verify_otp($uid,$otp){
         $header = array("Accept"=>'application/json');
         $url = $this->base_url."verify_otp?uid=".utf8_encode($uid)."&otp=".utf8_encode($otp);
+        $resp = Unirest\Request::get($url);
+        return $resp;
+    }
+    function final_ver($uid,$otp){
+        $header = array("Accept"=>'application/json');
+        $url = $this->base_url."otp_validate?uid=".utf8_encode($uid)."&otp=".utf8_encode($otp);
         $resp = Unirest\Request::get($url);
         return $resp;
     }

@@ -1,26 +1,55 @@
-<?php include 'header.php'; ?>
+<?php include "header.php"; ?>
     <script>
         $(function () {
-            $("#date_p").datepicker({
-                changeMonth: true,
-                changeYear: true,
-                dateFormat: "dd-mm-yy",
-                yearRange: '1980:2010',
-                defaultDate: '13-05-1998'
-            });
-        });
-        $(function () {
             $('[data-toggle="popover"]').popover()
-        })
+        });
     </script>
+    <link id="themes" rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/fontawesome-all.min.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
 <?php include "preloader.php"; ?>
-    <style type="text/css">
+    <style type="">
+        .margin_top {
+            margin-top: 15px;
+        }
+        .form-control:disabled{
+            background-color: white !important;
+        }
         html {
             height: 100%;
         }
 
         body {
             background: linear-gradient(to bottom right, #005c97, #363795);
+        }
+
+        .fa {
+            color: white;
+        }
+
+        .w_color {
+            color: white;
+        }
+
+        a:hover {
+            color: white !important;
+        }
+
+        .vertical-center {
+            min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+            min-height: 100vh; /* These two lines are counted as one 🙂       */
+            display: flex;
+            align-items: center;
+        }
+
+        .def_btn:hover {
+            color: white;
+        }
+
+        .border_bottom {
+            border-bottom: white 2px solid !important;
+            font-size: 25px;
+            border-radius: 0px !important;
         }
 
         .vcert {
@@ -30,17 +59,8 @@
             transform: translate(-50%, -50%);
         }
 
-        .w_color {
-            color: white;
-        }
-        .margin-top {
-            margin-top: 18px;
-        }
-        .border-s{
-            transition: all ease 0.36s;
-        }
-        .border-s:hover{
-            border-radius: 25px;
+        #ok {
+            animation-iteration-count: 1;
         }
     </style>
     </head>
@@ -48,7 +68,7 @@
     <div class="load"></div>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4 text-center">Apply Now</h1>
+            <h1 class="display-4 text-center">Check Details</h1>
             <p class="text-center"><small class="text-muted">Please Do Not Hit Refresh Or You Might Have To Fill Form Again.</small></p>
             <hr class="my-2">
             <form method="post" action="./sent_otp">
@@ -59,32 +79,32 @@
                             <div class="form-group">
                                 <label>Name:</label>
                                 <div>
-                                    <input class="form-control disabled" placeholder="Enter Your Name" name="name" required>
+                                    <input class="form-control" value="<?php echo $data->name; ?>" disabled name="name">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label>Father's Name:</label>
-								<div class="input-group">
-                                        <div class="input-group-prepend"><span class="input-group-text">Mr </span></div>
-                                        <input class="form-control" placeholder="Enter Father's Name" name="f_name"
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text">Mr </span></div>
+                                    <input class="form-control" value="<?php echo $data->f_name; ?>" disabled name="f_name"
                                            required>
-                                    </div>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label>Mother's Name:</label>
-								<div class="input-group">
-                                        <div class="input-group-prepend"><span class="input-group-text">Mrs </i></span></div>
-                                         <input class="form-control" placeholder="Enter Mother's Name" name="m_name"
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text">Mrs </i></span></div>
+                                    <input class="form-control" value="<?php echo $data->m_name; ?>" disabled name="m_name"
                                            required>
-                                    </div>
+                                </div>
                                 <div>
-                                   
+
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label>Date OF Birth</label>
                                 <div class="input-group">
-                                    <input class="form-control" id="date_p" placeholder="DD-MM-YYYY" name="dob"
+                                    <input class="form-control" id="date_p" value="<?php echo $data->dob; ?>" disabled name="dob"
                                            required>
                                     <div class="input-group-append">
                                     <span class="input-group-text">
@@ -101,12 +121,7 @@
                                         <i class="fa fa-user"></i>
                                     </span>
                                     </div>
-                                    <select class="form-control" name="gender">
-                                        <option selected>-SELECT-</option>
-										<option value="Male">Male</option>
-                                        <option value="Female">Female</option>
-                                        <option value="Other">Other</option>
-                                    </select>
+                                    <input class="form-control" name="gender" disabled value="<?php echo $data->gender; ?>">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -114,15 +129,15 @@
                                 <div>
                                     <div class="input-group">
                                         <div class="input-group-prepend"><span class="input-group-text"><i
-                                                        class="fa fa-envelope"></i></span></div>
-                                        <input type="email" class="form-control" placeholder="example@example.com"
+                                                    class="fa fa-envelope"></i></span></div>
+                                        <input type="email" class="form-control" value="<?php echo $data->email; ?>" disabled
                                                name="email" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label>Address:</label>
-                                <textarea placeholder="Enter Your Address" class="form-control" name="address" rows="5"></textarea>
+                                <textarea disabled class="form-control" name="address" rows="5"><?php echo $data->address; ?></textarea>
                             </div>
                         </div>
                         <!-- Right Row -->
@@ -131,13 +146,13 @@
                                 <label>Adhaar Number:</label>
                                 <div>
                                     <div class="input-group">
-                                        <input type="text" class="form-control adh" placeholder="XXXX XXXX XXXX"
+                                        <input type="text" class="form-control adh" disabled value="<?php echo $data->adhaar; ?>"
                                                name="adhaar"
                                                required>
                                         <div class="input-group-append">
                                         <span class="input-group-text">
-                                            <i class="fa fa-question-circle animated tada infinite text-danger" data-toggle="popover" title="Important:"
-                                               data-content="Please Enter A Valid Adhaar Number. This Is going to be utilized to verify your documents."
+                                            <i class="fa fa-check-circle animated tada infinite text-success" data-toggle="popover" title="Important:"
+                                               data-content="Adhaar Card Verified."
                                                data-placement="top"></i>
                                         </span>
                                         </div>
@@ -146,7 +161,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Pin Code:</label>
-                                <input type="text" name="pin" class="form-control" required placeholder="XXXXXX" 
+                                <input type="text" name="pin" class="form-control" required value="<?php echo $data->pin; ?>" disabled
                                        title="Please Enter A Valid Indian  Pincode" pattern="^[1-9][0-9]{5}$">
                             </div>
                             <div class="form-group">
@@ -157,41 +172,36 @@
                                     <i class="fa fa-graduation-cap"></i>
                                 </span>
                                     </div>
-                                    <select class="form-control" name="qualification">
-                                        <option selected value="Bachelor">Bachelor's</option>
-                                        <option value="Post Graduate">Post Graduate</option>
-                                        <option value="Doctorate">Doctorate</option>
-                                    </select>
+                                    <input class="form-control" name="qualification" value="<?php echo $data->qualification; ?>" disabled>
                                 </div>
 
                             </div>
                             <div class="form-group">
                                 <label>Year Of Graduation:</label>
-                                <input type="number" class="form-control" name="yog" placeholder="Year Of Graduation">
+                                <input type="number" class="form-control" name="yog" value="<?php echo $data->yog; ?>" disabled>
                             </div>
                             <div class="form-group">
                                 <label>Last Institute Attended:</label>
                                 <input type="text" class="form-control" name="inst"
-                                       placeholder="Last Institute Attended">
+                                       value="<?php echo $data->inst; ?>" disabled>
                             </div>
                             <div class="form-group">
                                 <label>Mobile Number:</label>
-                                 <div class="input-group">
-                                        <div class="input-group-prepend"><span class="input-group-text">+91-</span></div>
-                                       <input type="number" class="form-control" name="mobile" placeholder="Mobile Number">
-                                    </div>
-                                
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text">+91-</span></div>
+                                    <input type="number" class="form-control" name="mobile" value="<?php echo $data->mobile; ?>" disabled>
+                                </div>
+
                             </div>
                         </div>
                     </div>
                     <p class="text-center">
-                    <button type="submit" id=""
-                            class="btn btn-primary btn-lg border-s">Verify Documents
-                    </button>
+                        <button type="submit" id=""
+                                class="btn btn-primary btn-lg border-s">Submit Application
+                        </button>
                     </p>
             </form>
 
         </div>
     </div>
-
-<?php include "footer.php"; ?>
+<?php include_once "footer.php"; ?>

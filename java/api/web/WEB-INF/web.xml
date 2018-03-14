@@ -8,6 +8,14 @@
         <servlet-name>verify_otp</servlet-name>
         <servlet-class>verify_otp</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>otp_validate</servlet-name>
+        <servlet-class>otp_validate</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>digi_lock_doc</servlet-name>
+        <servlet-class>digi_lock_doc</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>request_otp</servlet-name>
         <url-pattern>/request_otp</url-pattern>
@@ -15,6 +23,14 @@
     <servlet-mapping>
         <servlet-name>verify_otp</servlet-name>
         <url-pattern>/verify_otp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>otp_validate</servlet-name>
+        <url-pattern>/otp_validate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>digi_lock_doc</servlet-name>
+        <url-pattern>/digi_lock_doc</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

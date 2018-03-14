@@ -9,6 +9,11 @@ $json_res = $res->raw_body;
 $json_data = json_decode($json_res);
 if ($json_data->result == "true") {
     $mobile = $json_data->mobile;
+    // Setting Post Values in json array
+    $arr = $_POST;
+    $_SESSION['data'] = json_encode($arr);
+    //Post value end
+
 } else {
     $_SESSION['error'] = "Sorry We Cannot Verify You Using Adhaar Number. Please Login To Your Digital Locker";
     header("location:./login_digi");
@@ -43,7 +48,6 @@ if ($json_data->result == "true") {
         a:hover {
             color: white !important;
         }
-
         .vertical-center {
             min-height: 100%; /* Fallback for browsers do NOT support vh unit */
             min-height: 100vh; /* These two lines are counted as one 🙂       */
@@ -79,10 +83,13 @@ if ($json_data->result == "true") {
             <h1 class="display-4 text-center w_color animated tada infinite"><i class="fa fa-check-circle"></i></h1>
             <h2 class="text-center w_color">OTP Successfully Sent To Mobile Number</h2>
             <h1 class="w_color text-center"><?php echo $mobile; ?></h1>
-            <input class="form-control text-center margin_top form-control-lg col-6 offset-3" placeholder="XXXX" id="OTP">
+            <form method="post" id="form" action="./verify">
+            <input class="form-control text-center margin_top form-control-lg col-6 offset-3" name="otp" placeholder="XXXX" id="OTP">
+            </form>
             <p class="text-center margin_top">
                 <button type="button" class="btn btn-danger btn-lg" onclick="verify_otp()">Verify</button>
             </p>
+
         </div>
         <script>
             function verify_otp() {
@@ -97,6 +104,7 @@ if ($json_data->result == "true") {
                             var json_o = JSON.parse(data);
                             if (json_o.verified == "true") {
                                 alert("OTP VERIFIED");
+                                $('#form').submit();
                             }
                             else {
                                 alert("OTP VERIFICATION FAILED");

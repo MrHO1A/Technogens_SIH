@@ -1,5 +1,5 @@
-<?php 
-header("location:./reg");
+<?php
+//header("location:./reg");
 ?>
 
 <!DOCTYPE html>

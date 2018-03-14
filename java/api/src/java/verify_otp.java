@@ -10,7 +10,7 @@ import org.json.simple.JSONObject;
 /**
  *
  * @author AMAN
- * API To VErify OTP
+ * API To VErify OTP for AJAX calls
  * using supplied hash
  */
 public class verify_otp extends HttpServlet {

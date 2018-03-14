@@ -54,6 +54,13 @@
             <form method="post" action="./sent_otp">
                 <div class="container margin-top">
                     <div class="row">
+                        <div class="col-md-12">
+                            <div class="text-center">
+                            <img src="image/IMG_20171019_222044.png" width="200" height="350" class="rounded " alt="user_image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row margin-top">
                         <!-- Left Row -->
                         <div class="col-md-6">
                             <div class="form-group">
@@ -64,21 +71,21 @@
                             </div>
                             <div class="form-group">
                                 <label>Father's Name:</label>
-								<div class="input-group">
-                                        <div class="input-group-prepend"><span class="input-group-text">Mr </span></div>
-                                        <input class="form-control" placeholder="Enter Father's Name" name="f_name"
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text">Mr </span></div>
+                                    <input class="form-control" placeholder="Enter Father's Name" name="f_name"
                                            required>
-                                    </div>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label>Mother's Name:</label>
-								<div class="input-group">
-                                        <div class="input-group-prepend"><span class="input-group-text">Mrs </i></span></div>
-                                         <input class="form-control" placeholder="Enter Mother's Name" name="m_name"
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text">Mrs </i></span></div>
+                                    <input class="form-control" placeholder="Enter Mother's Name" name="m_name"
                                            required>
-                                    </div>
+                                </div>
                                 <div>
-                                   
+
                                 </div>
                             </div>
                             <div class="form-group">
@@ -103,7 +110,7 @@
                                     </div>
                                     <select class="form-control" name="gender">
                                         <option selected>-SELECT-</option>
-										<option value="Male">Male</option>
+                                        <option value="Male">Male</option>
                                         <option value="Female">Female</option>
                                         <option value="Other">Other</option>
                                     </select>
@@ -114,7 +121,7 @@
                                 <div>
                                     <div class="input-group">
                                         <div class="input-group-prepend"><span class="input-group-text"><i
-                                                        class="fa fa-envelope"></i></span></div>
+                                                    class="fa fa-envelope"></i></span></div>
                                         <input type="email" class="form-control" placeholder="example@example.com"
                                                name="email" required>
                                     </div>
@@ -146,7 +153,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Pin Code:</label>
-                                <input type="text" name="pin" class="form-control" required placeholder="XXXXXX" 
+                                <input type="text" name="pin" class="form-control" required placeholder="XXXXXX"
                                        title="Please Enter A Valid Indian  Pincode" pattern="^[1-9][0-9]{5}$">
                             </div>
                             <div class="form-group">
@@ -176,18 +183,41 @@
                             </div>
                             <div class="form-group">
                                 <label>Mobile Number:</label>
-                                 <div class="input-group">
-                                        <div class="input-group-prepend"><span class="input-group-text">+91-</span></div>
-                                       <input type="number" class="form-control" name="mobile" placeholder="Mobile Number">
-                                    </div>
-                                
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text">+91-</span></div>
+                                    <input type="number" class="form-control" name="mobile" placeholder="Mobile Number">
+                                </div>
+
                             </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-hover table-inverse">
+                                <thead class="thead-inverse|thead-default">
+                                <tr>
+                                    <th>Document Name</th>
+                                    <th>Link</th>
+                                    <th>Status</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td scope="row">12Th Mark Sheet</td>
+                                    <td>https;//1213</td>
+                                    <td class="text-success">Verified <i class="fa fa-check-circle"></i></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">10Th Marksheet</td>
+                                    <td></td>
+                                    <td class="text-danger">Failed <i class="fa fa-times-circle"></i></td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                     <p class="text-center">
-                    <button type="submit" id=""
-                            class="btn btn-primary btn-lg border-s">Verify Documents
-                    </button>
+                        <button type="submit" id=""
+                                class="btn btn-primary btn-lg border-s">Verify Documents
+                        </button>
                     </p>
             </form>
 
