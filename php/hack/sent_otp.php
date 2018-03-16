@@ -11,12 +11,19 @@ if ($json_data->result == "true") {
     $mobile = $json_data->mobile;
     // Setting Post Values in json array
     $arr = $_POST;
-    $_SESSION['data'] = json_encode($arr);
+    $_SESSION['data'] = json_encode($json_data);
+
     //Post value end
 
 } else {
-    $_SESSION['error'] = "Sorry We Cannot Verify You Using Adhaar Number. Please Login To Your Digital Locker";
-    header("location:./login_digi");
+    //Distroying Everyting Session
+    session_destroy();
+    //End
+    //Creating New Error Session
+    session_start();
+    //End
+    $_SESSION['error'] = "Sorry We Cannot Verify You Using Adhaar Number. Please Fill Form Manually.. OR";
+    header("location:./reg_m");
 }
 ?>
 <?php include "header.php"; ?>

@@ -8,12 +8,23 @@
     <script type="text/javascript" src="js/fontawesome-all.min.js"></script>
     <link rel="stylesheet" href="css/animate.css">
 <?php include "preloader.php"; ?>
+    <script src="js/jquery.mask.min.js"></script>
+    <script>
+        $(function () {
+            $('.adhaar').mask('0000 0000 0000');
+        });
+    </script>
     <style type="">
         .margin_top {
             margin-top: 15px;
         }
         .form-control:disabled{
             background-color: white !important;
+
+        }
+        .form-control:disabled, .input-group-text:disabled{
+            border: 1px solid green !important;
+            border-collapse: collapse !important;
         }
         html {
             height: 100%;
@@ -86,7 +97,7 @@
                                 <label>Father's Name:</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend"><span class="input-group-text">Mr </span></div>
-                                    <input class="form-control" value="<?php echo $data->f_name; ?>" disabled name="f_name"
+                                    <input class="form-control" value="<?php echo $data->father_name; ?>" disabled name="f_name"
                                            required>
                                 </div>
                             </div>
@@ -94,7 +105,7 @@
                                 <label>Mother's Name:</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend"><span class="input-group-text">Mrs </i></span></div>
-                                    <input class="form-control" value="<?php echo $data->m_name; ?>" disabled name="m_name"
+                                    <input class="form-control" value="<?php echo $data->mother_name; ?>" disabled name="m_name"
                                            required>
                                 </div>
                                 <div>
@@ -130,14 +141,15 @@
                                     <div class="input-group">
                                         <div class="input-group-prepend"><span class="input-group-text"><i
                                                     class="fa fa-envelope"></i></span></div>
-                                        <input type="email" class="form-control" value="<?php echo $data->email; ?>" disabled
-                                               name="email" required>
+                                        <input type="email" class="form-control"
+                                               name="email" required placeholder="Enter Your Email Address">
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label>Address:</label>
-                                <textarea disabled class="form-control" name="address" rows="5"><?php echo $data->address; ?></textarea>
+                                <textarea class="form-control" name="address" rows="5"><?php echo $data->address; ?></textarea>
+                                <p class="text-right"><small class="text-danger">*Editable</small></p>
                             </div>
                         </div>
                         <!-- Right Row -->
@@ -146,7 +158,7 @@
                                 <label>Adhaar Number:</label>
                                 <div>
                                     <div class="input-group">
-                                        <input type="text" class="form-control adh" disabled value="<?php echo $data->adhaar; ?>"
+                                        <input type="text" class="form-control adh adhaar" disabled value="<?php echo $data->adhaar; ?>"
                                                name="adhaar"
                                                required>
                                         <div class="input-group-append">
@@ -172,24 +184,24 @@
                                     <i class="fa fa-graduation-cap"></i>
                                 </span>
                                     </div>
-                                    <input class="form-control" name="qualification" value="<?php echo $data->qualification; ?>" disabled>
+                                    <input class="form-control" name="qualification" placeholder="Enter Your Qualification">
                                 </div>
 
                             </div>
                             <div class="form-group">
                                 <label>Year Of Graduation:</label>
-                                <input type="number" class="form-control" name="yog" value="<?php echo $data->yog; ?>" disabled>
+                                <input type="number" class="form-control" name="yog" placeholder="Year Of Graduation">
                             </div>
                             <div class="form-group">
                                 <label>Last Institute Attended:</label>
                                 <input type="text" class="form-control" name="inst"
-                                       value="<?php echo $data->inst; ?>" disabled>
+                                       placeholder="Last Institute Attended" required>
                             </div>
                             <div class="form-group">
                                 <label>Mobile Number:</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend"><span class="input-group-text">+91-</span></div>
-                                    <input type="number" class="form-control" name="mobile" value="<?php echo $data->mobile; ?>" disabled>
+                                    <input type="number" class="form-control" name="mobile" required placeholder="Your Current Contact Number">
                                 </div>
 
                             </div>

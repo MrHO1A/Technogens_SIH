@@ -28,8 +28,10 @@ public class otp_validate extends HttpServlet {
         if (otp_c.number.get(uid).equals(otp)) {
             System.out.println(otp_c.adhaar_number.toString());
             String mobile_number = otp_c.adhaar_number.get(uid);
+            //Removing Adhaar Number And UID
             otp_c.number.remove(uid);
             otp_c.adhaar_number.remove(uid);
+            //END
             System.out.println("OTP Validated of Mobile Number -> "+mobile_number);
             jso.put("error","false");
             jso.put("message","OTP Verified For Number -> "+mobile_number);

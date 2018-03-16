@@ -21,7 +21,9 @@ public class request_otp extends HttpServlet {
         String hash = req.getParameter("uid");
         System.out.println(hash);
         database_main d_main = new database_main();
+        //Getting Data Fom Adhaar Card Database
         HashMap<String,String> opt = d_main.data_u_adhar(adhaar);
+        //End
         PrintWriter pr = res.getWriter();
         random_otp Random_OTP = new random_otp();
         if(opt.get("adhaar")!=null){
