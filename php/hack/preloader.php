@@ -11,7 +11,7 @@
         width: 100%;
         height: 100%;
         z-index: 9999;
-        background: url("fonts/laoedr.gif") 50% 50% no-repeat white ;
+        background: url("fonts/loader.gif") 50% 50% no-repeat white ;
         opacity: .9;
     }
 </style>

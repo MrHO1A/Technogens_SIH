@@ -87,21 +87,21 @@
                             </div>
                             <div class="form-group">
                                 <label>Father's Name:</label>
-								<div class="input-group">
-                                        <div class="input-group-prepend"><span class="input-group-text">Mr </span></div>
-                                        <input class="form-control" placeholder="Enter Father's Name" name="f_name"
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text">Mr </span></div>
+                                    <input class="form-control" placeholder="Enter Father's Name" name="f_name"
                                            required>
-                                    </div>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label>Mother's Name:</label>
-								<div class="input-group">
-                                        <div class="input-group-prepend"><span class="input-group-text">Mrs </i></span></div>
-                                         <input class="form-control" placeholder="Enter Mother's Name" name="m_name"
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text">Mrs </i></span></div>
+                                    <input class="form-control" placeholder="Enter Mother's Name" name="m_name"
                                            required>
-                                    </div>
+                                </div>
                                 <div>
-                                   
+
                                 </div>
                             </div>
                             <div class="form-group">
@@ -126,7 +126,7 @@
                                     </div>
                                     <select class="form-control" name="gender">
                                         <option selected>-SELECT-</option>
-										<option value="Male">Male</option>
+                                        <option value="Male">Male</option>
                                         <option value="Female">Female</option>
                                         <option value="Other">Other</option>
                                     </select>
@@ -169,7 +169,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Pin Code:</label>
-                                <input type="text" name="pin" class="form-control" required placeholder="XXXXXX" 
+                                <input type="text" name="pin" class="form-control" required placeholder="XXXXXX"
                                        title="Please Enter A Valid Indian  Pincode" pattern="^[1-9][0-9]{5}$">
                             </div>
                             <div class="form-group">
@@ -199,18 +199,18 @@
                             </div>
                             <div class="form-group">
                                 <label>Mobile Number:</label>
-                                 <div class="input-group">
-                                        <div class="input-group-prepend"><span class="input-group-text">+91-</span></div>
-                                       <input type="number" class="form-control" name="mobile" placeholder="Mobile Number">
-                                    </div>
-                                
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text">+91-</span></div>
+                                    <input type="number" class="form-control" name="mobile" placeholder="Mobile Number">
+                                </div>
+
                             </div>
                         </div>
                     </div>
                     <p class="text-center">
-                    <button type="submit" id=""
-                            class="btn btn-primary btn-lg border-s">Verify Documents
-                    </button>
+                        <button type="submit" id=""
+                                class="btn btn-primary btn-lg border-s">Verify Documents
+                        </button>
                     </p>
             </form>
 

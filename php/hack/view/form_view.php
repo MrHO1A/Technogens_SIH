@@ -12,17 +12,18 @@
     <script>
         $(function () {
             $('.adhaar').mask('0000 0000 0000');
+            $('.mobile').mask('00000 00000');
         });
     </script>
     <style type="">
         .margin_top {
             margin-top: 15px;
         }
-        .form-control:disabled{
+        .form-control:read-only{
             background-color: white !important;
 
         }
-        .form-control:disabled, .input-group-text:disabled{
+        .form-control:read-only{
             border: 1px solid green !important;
             border-collapse: collapse !important;
         }
@@ -37,7 +38,6 @@
         .fa {
             color: white;
         }
-
         .w_color {
             color: white;
         }
@@ -74,15 +74,22 @@
             animation-iteration-count: 1;
         }
     </style>
+    <script>
+        alert("Please Check Your Details !");
+        function sub() {
+            $("#data_form").submit();
+        }
+    </script>
     </head>
     <body>
     <div class="load"></div>
+    <?php include_once "modal.php";  ?>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4 text-center">Check Details</h1>
-            <p class="text-center"><small class="text-muted">Please Do Not Hit Refresh Or You Might Have To Fill Form Again.</small></p>
+            <p class="text-center"><small class="text-danger">Please Do Not Hit Refresh Or You Might Have To Fill Form Again.</small></p>
             <hr class="my-2">
-            <form method="post" action="./sent_otp">
+            <form method="post" id="data_form" action="./select_doc">
                 <div class="container margin-top">
                     <div class="row">
                         <!-- Left Row -->
@@ -90,14 +97,14 @@
                             <div class="form-group">
                                 <label>Name:</label>
                                 <div>
-                                    <input class="form-control" value="<?php echo $data->name; ?>" disabled name="name">
+                                    <input class="form-control" value="<?php echo $data->name; ?>" readonly name="name">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label>Father's Name:</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend"><span class="input-group-text">Mr </span></div>
-                                    <input class="form-control" value="<?php echo $data->father_name; ?>" disabled name="f_name"
+                                    <input class="form-control" value="<?php echo $data->father_name; ?>" readonly name="f_name"
                                            required>
                                 </div>
                             </div>
@@ -105,7 +112,7 @@
                                 <label>Mother's Name:</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend"><span class="input-group-text">Mrs </i></span></div>
-                                    <input class="form-control" value="<?php echo $data->mother_name; ?>" disabled name="m_name"
+                                    <input class="form-control" value="<?php echo $data->mother_name; ?>" readonly name="m_name"
                                            required>
                                 </div>
                                 <div>
@@ -115,7 +122,7 @@
                             <div class="form-group">
                                 <label>Date OF Birth</label>
                                 <div class="input-group">
-                                    <input class="form-control" id="date_p" value="<?php echo $data->dob; ?>" disabled name="dob"
+                                    <input class="form-control" id="date_p" value="<?php echo $data->dob; ?>" readonly name="dob"
                                            required>
                                     <div class="input-group-append">
                                     <span class="input-group-text">
@@ -132,7 +139,7 @@
                                         <i class="fa fa-user"></i>
                                     </span>
                                     </div>
-                                    <input class="form-control" name="gender" disabled value="<?php echo $data->gender; ?>">
+                                    <input class="form-control" name="gender" readonly value="<?php echo $data->gender; ?>">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -158,7 +165,7 @@
                                 <label>Adhaar Number:</label>
                                 <div>
                                     <div class="input-group">
-                                        <input type="text" class="form-control adh adhaar" disabled value="<?php echo $data->adhaar; ?>"
+                                        <input type="text" class="form-control adh adhaar" readonly value="<?php echo $data->adhaar; ?>"
                                                name="adhaar"
                                                required>
                                         <div class="input-group-append">
@@ -173,7 +180,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Pin Code:</label>
-                                <input type="text" name="pin" class="form-control" required value="<?php echo $data->pin; ?>" disabled
+                                <input type="text" name="pin" class="form-control" required value="<?php echo $data->pin; ?>" readonly
                                        title="Please Enter A Valid Indian  Pincode" pattern="^[1-9][0-9]{5}$">
                             </div>
                             <div class="form-group">
@@ -201,19 +208,19 @@
                                 <label>Mobile Number:</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend"><span class="input-group-text">+91-</span></div>
-                                    <input type="number" class="form-control" name="mobile" required placeholder="Your Current Contact Number">
+                                    <input type="text" class="form-control mobile" name="mobile" required placeholder="Your Current Contact Number">
                                 </div>
 
                             </div>
                         </div>
                     </div>
-                    <p class="text-center">
-                        <button type="submit" id=""
-                                class="btn btn-primary btn-lg border-s">Submit Application
-                        </button>
-                    </p>
             </form>
 
         </div>
+        <p class="text-center">
+            <button
+                    class="btn btn-primary btn-lg border-s" data-toggle="modal" data-target="#accept">Go To Document Verification
+            </button>
+        </p>
     </div>
 <?php include_once "footer.php"; ?>

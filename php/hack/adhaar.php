@@ -19,6 +19,8 @@
             $('#form').submit();
         }
     </script>
+    <?php include_once "class/enter-key-disable.php"; ?>
+
     <title>Digital Locker</title>
     <style type="">
         .margin_top{
@@ -73,7 +75,7 @@
         <div class="offset-md-3 offset-md-3 col-md-6 col-lg-6">
             <h2 class="text-center w_color">VERIFY ADHAAR</h2>
             <form id="form" method="post" action="./sent_otp">
-            <input type="text" name="adhaar" class="form-control text-center adhaar" placeholder="Enter Adhaar Card Number" required="required">
+            <input type="text" name="adhaar" pattern="\d*" class="form-control text-center adhaar" placeholder="Enter Adhaar Card Number" required="required">
             </form>
             <button type="button" class="btn-block btn margin_top" onclick="send_data()" id="send">Verify</button>
             <p class="text-right"><small class="w_color">*This Is Going To Be Utilized To Get Your Info</small></p>

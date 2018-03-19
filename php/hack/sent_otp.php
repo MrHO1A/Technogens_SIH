@@ -30,6 +30,7 @@ if ($json_data->result == "true") {
     <link id="themes" rel="stylesheet" href="css/bootstrap.min.css">
     <script type="text/javascript" src="js/fontawesome-all.min.js"></script>
 <link rel="stylesheet" href="css/animate.css">
+<?php include_once "class/enter-key-disable.php"; ?>
 <?php include "preloader.php"; ?>
     <style type="">
         .margin_top {
@@ -91,7 +92,7 @@ if ($json_data->result == "true") {
             <h2 class="text-center w_color">OTP Successfully Sent To Mobile Number</h2>
             <h1 class="w_color text-center"><?php echo $mobile; ?></h1>
             <form method="post" id="form" action="./verify">
-            <input class="form-control text-center margin_top form-control-lg col-6 offset-3" name="otp" placeholder="XXXX" id="OTP">
+            <input type="number" class="form-control text-center margin_top form-control-lg col-6 offset-3" name="otp" placeholder="XXXX" id="OTP">
             </form>
             <p class="text-center margin_top">
                 <button type="button" class="btn btn-danger btn-lg" onclick="verify_otp()">Verify</button>

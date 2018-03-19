@@ -24,4 +24,27 @@ class otp_verif_fun
         $resp = Unirest\Request::get($url);
         return $resp;
     }
+    function get_documents($uid){
+        //Old Method
+        $url = $this->base_url."get_doc_info?uid=".utf8_encode($uid)."&data=".utf8_encode("tenth,twelth,domicile");
+        $resp = Unirest\Request::get($url);
+        return $resp;
+    }
+    function get_document_list($uid){
+        $url = $this->base_url."get_doc_list?uid=".utf8_encode($uid);
+        $resp = Unirest\Request::get($url);
+        $resp = explode(',',$resp->raw_body);
+        return $resp;
+    }
+    function verify_documents($data_of,$file_names,$uid){
+        //Making CSV values
+        $data_of_csv = implode(',',$data_of);
+        $file_names_csv = implode(',',$file_names);
+        //End
+
+        //Final Call Url
+        $url = $this->base_url."doc_verf_status?uid=".utf8_encode($uid)."&files=".utf8_encode($file_names_csv)."&data=".utf8_encode($data_of_csv);
+        $resp = Unirest\Request::get($url);
+        return $resp;
+    }
 }
