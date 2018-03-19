@@ -13,8 +13,16 @@
         <servlet-class>otp_validate</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>digi_lock_doc</servlet-name>
-        <servlet-class>digi_lock_doc</servlet-class>
+        <servlet-name>get_doc_info</servlet-name>
+        <servlet-class>get_doc_info</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>get_doc_list</servlet-name>
+        <servlet-class>get_doc_list</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>doc_verf_status</servlet-name>
+        <servlet-class>doc_verf_status</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>request_otp</servlet-name>
@@ -29,8 +37,16 @@
         <url-pattern>/otp_validate</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>digi_lock_doc</servlet-name>
-        <url-pattern>/digi_lock_doc</url-pattern>
+        <servlet-name>get_doc_info</servlet-name>
+        <url-pattern>/get_doc_info</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>get_doc_list</servlet-name>
+        <url-pattern>/get_doc_list</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>doc_verf_status</servlet-name>
+        <url-pattern>/doc_verf_status</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

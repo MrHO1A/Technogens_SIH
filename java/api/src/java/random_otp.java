@@ -8,8 +8,13 @@ import java.net.URLEncoder;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 public class random_otp {
+    
+    //Some Important Hash Maps Made here I dont Know Why
     static HashMap<String, String> number = new HashMap<>();
     static HashMap<String, String> adhaar_number = new HashMap<>();
+    static HashMap<String, String> adhaar_card = new HashMap<>();
+    //End 
+    
     //Function To Send OTP using MSG91 api
     public void send_to_number(String mobile,String otp) throws UnirestException{
         String message = "Your OTP is "+otp+" enter this to verify documents";
@@ -33,6 +38,7 @@ public class random_otp {
         String random = String.format("%04d", rand.nextInt(10000));
         this.number.put(hash,random);
         this.adhaar_number.put(hash,number);
+        this.adhaar_card.put(hash,adhaar);
         System.out.println(this.number.toString());
         
         //Will Send OTP To Mobile Number
