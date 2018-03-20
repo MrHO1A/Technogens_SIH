@@ -29,7 +29,7 @@
 		td.dot{
 			color: #99cfff; 
 		}
-		select{
+		select.number{
 			border-style: inset;
 			border-width: 4px;
 			height: 35px;
@@ -38,6 +38,17 @@
 			font-family: Aparajita;
 			font-size: 25px;
 			border-color: #e0fbfc;
+		}
+		select.gen{
+			border-style: inset;
+			border-width: 4px;
+			font-size: 18px;
+			font-style: bold;
+			font-family: Lucida Fax;
+			height: 35px;
+			text-orientation: center;
+			border-color: #e0fbfc;
+			width: 100px;
 		}
 		input.phone{
 			border-style: all;
@@ -56,8 +67,8 @@
 			font-size: 18px;
 			font-style: bold;
 			font-family: Lucida Fax;
-			height: 27px;
-			width: 800px;
+			height: 20px;
+			width: 80%;
 			border-color: #e0fbfc;
 		}
 		input.normal{
@@ -180,20 +191,6 @@
         	border-width: 1px;
         	border-color: #005c97;		
         }
-    
-        }
-        textarea.address{
-        	border-style: inset;
-			border-width: 4px;
-			font-size: 18px;
-			font-style: bold;
-			font-family: Lucida Fax;
-			height: 27px;
-			text-orientation: center;
-			border-color: #e0fbfc;
-			width: 80%;
-			height: 100px;	
-        }
 		img.img{
 			width: 100%;
 		}
@@ -226,7 +223,7 @@
 				</td>
 				<td>
 
-					<select>
+					<select class="number">
 						<option>+91</option>
 					</select>
 					<input class="phone" type="text" pattern="[1-9]{1}[0-9]{9}" placeholder="10 digit phone no." title="Please enter your 10 digit phone no." name="phone" id="phone" required>
@@ -285,12 +282,11 @@
 					Gender :
 				</td>
 				<td>
-					<input class="gender" type="text"  list="gender" name="gen" id="gen" required>
-					<datalist id="gender">
+					<select class="gen" type="text" name="gen" id="gen" required>
 						<option>Male</option>
 						<option>Female</option>
 						<option>Other</option>
-					</datalist>
+					</select>
 				</td>
 
 			</tr>
@@ -328,11 +324,12 @@
 					Address :
 				</td>
 				<td colspan="4">
-					<textarea class="address" placeholder="Ex. C-10 Prem Nagar, Jabalpur (M.P.)" name="address" id="address" required></textarea>
+				     <input class="address" placeholder="Ex. C-10 Prem Nagar, Jabalpur (M.P.)" name="address" id="address" required>
 				</td>	
 			<tr>
 				<td class="title">
 					City pin code :
+					
 				</td>
 				<td>
 					<input class="normal" type="text" pattern="[1-9]{1}[0-9]{5}" placeholder="Ex. 482001" title="Please enter 6 digit city pin code" name="pin" id="pin" required>
@@ -397,7 +394,6 @@
 			</tr>
 			<tr>
 			    <td class="ll"><font color="#4e4e8c">.</font></td>
-			    <td></td>
 			</tr>
 			<tr>
 				<td class="ll">NIELIT Bhavan,</td>

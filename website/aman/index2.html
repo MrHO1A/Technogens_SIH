@@ -42,11 +42,24 @@
         a:hover{
             color: white !important;
         }
-        .btn-block{
+        button.btn-block{
             background: white !important;
             font-size: 18px;
             font-weight: bold;
             color: #005C97;
+
+            padding: 3px 20px ;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            border: solid;
+            border-radius: 25px;
+            box-shadow: 0 3px #999;
+        }
+        .btn-block:hover{
+        	color: green;
+        	box-shadow: 0 2px green;
+            transform: translateY(4px);
         }
         .vertical-center {
             min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
@@ -69,11 +82,11 @@
 <body>
 <div class="last">
 <br>
-<br>
 <div class="container vertical">
     <div class="row">
         <div class="col-md-offset-4 col-lg-offset-4 col-md-4 col-lg-4">
-            <h2 class="text-center w_color">LOGIN</h2>
+            <h2 class="text-center w_color">Sign In</h2>
+            <br>
             <form method="post" action="/login">
                 <div class="input-group bottom_b">
                     <span class="input-group-addon trans" id="basic-addon1"><span class="glyphicon glyphicon-user "></span></span>
@@ -140,9 +153,8 @@
 			    	<a class="link" href="http://rtionline.gov.in">rtionline.gov.in</a>
 			    <br>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<a class="link" href="http://mail.gov.in">mail.gov.in</a></p>
-				<br>
-					
+					<a class="link" href="http://mail.gov.in">mail.gov.in</a>
+				<br><br>
 					<img src="hack2.png">
 				</p>
 			    </font>
