@@ -47,4 +47,9 @@ class otp_verif_fun
         $resp = Unirest\Request::get($url);
         return $resp;
     }
+    function update_files($uid,$file){
+        $url = $this->base_url."update_doc_status?uid=".utf8_encode($uid)."&file=".utf8_encode($file);
+        $resp = Unirest\Request::get($url);
+        return $resp;
+    }
 }

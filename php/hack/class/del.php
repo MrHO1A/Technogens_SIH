@@ -1,6 +1,9 @@
 <?php
-session_destroy();
-echo "Please Wait...";
-sleep(5);
-header("location:./adhaar");
+try{
+    session_start();
+    session_destroy();
+}
+catch (Exception $e){
+    echo "lolz";
+}
 ?>

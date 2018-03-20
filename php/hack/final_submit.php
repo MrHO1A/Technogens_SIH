@@ -11,9 +11,10 @@ session_start();
 $uid = $_SESSION['uid'];
 
 //Starting_File Function
-$data_of = array('twelth','tenth'); //Specify The Name Of Document in an array
+$data_of = array('adhaar','twelth','tenth'); //Specify The Name Of Document in an array
 $file_names = array();
 //Specify Names Of File In An Array Fill Array In Above Order
+array_push($file_names,$_POST['adhaar']);
 array_push($file_names,$_POST['twelth']);
 array_push($file_names,$_POST['tenth']);
 //End Names
@@ -222,7 +223,6 @@ $data = json_decode(json_encode($_SESSION['form_data']));
                     </thead>
                     <tbody>
                     <?php include_once "class/table_maker_advanced.php"; ?>
-
                     </tbody>
                 </table>
             </div>
@@ -230,7 +230,7 @@ $data = json_decode(json_encode($_SESSION['form_data']));
 
     </form>
     <p class="text-center">
-        <button type="submit" id=""
+        <button type="submit"
                 class="btn btn-primary btn-lg border-s" data-toggle="modal" data-target="#accept">Submit Form
         </button>
     </p>

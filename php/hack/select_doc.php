@@ -3,7 +3,10 @@
 <?php
 //Will Store POST DATA in Session Storage
 session_start();
-$_SESSION['form_data'] = $_POST;
+if(!isset($_SESSION['form_data'])){
+    echo "setting data";
+    $_SESSION['form_data'] = $_POST;
+}
 //End
 ?>
 
@@ -47,17 +50,20 @@ $_SESSION['form_data'] = $_POST;
             <p class="lead text-danger">Select Proper Documents From Digital Locker</p>
             <hr class="my-2">
             <form action="./final_submit" method="post">
+
             <?php
             include_once "class/document_selector.php";
             //Will Generate Select Option
-            doc_names("tenth,twelth");
+            doc_names("adhaar,tenth,twelth");
             //End
             ?>
+                <p class="text-danger">*Select Default If You Don't Have Document In Your Locker</p>
                 <p class="text-center">
                     <button type="submit"
                             class="btn btn-primary btn-lg border-s">Next
                     </button>
                 </p>
+
             </form>
         </div>
 <?php include "footer.php"; ?>

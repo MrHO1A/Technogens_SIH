@@ -1,4 +1,7 @@
-
+<?php
+//Session Distroyer
+include_once "class/del.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>

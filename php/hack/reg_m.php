@@ -211,6 +211,7 @@
                         <button type="submit" id=""
                                 class="btn btn-primary btn-lg border-s">Verify Documents
                         </button>
+
                     </p>
             </form>
 

@@ -13,14 +13,25 @@ import org.json.simple.JSONObject;
 public class status_getter {
     public JSONObject getData(String adhaar_number, String file, String data_of){
         JSONObject jso = new JSONObject();
-        
+        HashMap<String, String> map = new HashMap<>();
         //Getting Mysql Connector
         MYSQL_CONST mysql_c = new MYSQL_CONST();
         Connection conn = mysql_c.digi_connect();
         //End
         
+        //Send Default Info When file_name is nill
+        if("nill".equals(file)){
+            map.put("result", "true");
+            map.put("data_of", data_of.toUpperCase());
+            map.put("file_name", "null");
+            map.put("link", "null");
+            map.put("status", "upload");
+            jso.putAll(map);
+            return jso;
+        }
+        //End
+        
         //Set Default Map
-        HashMap<String, String> map = new HashMap<>();
         map.put("result", "true");
         map.put("data_of", data_of.toUpperCase());
         map.put("file_name", "null");

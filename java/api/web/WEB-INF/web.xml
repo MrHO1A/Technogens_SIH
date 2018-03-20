@@ -24,6 +24,10 @@
         <servlet-name>doc_verf_status</servlet-name>
         <servlet-class>doc_verf_status</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>update_doc_status</servlet-name>
+        <servlet-class>update_doc_status</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>request_otp</servlet-name>
         <url-pattern>/request_otp</url-pattern>
@@ -47,6 +51,10 @@
     <servlet-mapping>
         <servlet-name>doc_verf_status</servlet-name>
         <url-pattern>/doc_verf_status</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>update_doc_status</servlet-name>
+        <url-pattern>/update_doc_status</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
