@@ -4,67 +4,87 @@
 	<title>Home Page</title>
 	<style type="text/css">
 		p.title{
-			font-size: 27px;
+			font-size: 25px;
 			color: #161e8e;
+			margin-left: 10px;
+			font-family: Book Antiqua;
+		}
+		hr.line{
+			border-color: #363795;
+			border-width: 3px;
+			border-style: all;
 		}
 		p.para{
-			font-size: 21px;
-			margin-left: 20px;
+			font-size: 20px;
+			margin-left: 30px;
+			font-family: Book Antiqua;
 		}
 		body{
-			background: linear-gradient(to bottom , #e8fffd, #adfff7);
+			background: linear-gradient(to bottom, #e8fffd, #b7ddff);
 		}
-		button{
 
-			padding: 0px; 
+		button.button {
+
 			font-size: 25px;
 			text-align: center;
-			font-family: Aparajita;
+			font-family:Aparajita;
 			border-style: outset;
 			color: #0049c1;
-			width: 180px;
-			border-collapse: collapse;
+			width: 140px;
 			border-width: 2px; 
 			height: 35px;
-		}
-		.button:hover {
-			border-style: inset;
-			color: #363795; 
-		}
-		hr{
-			border-color: #3581ea;
-			border-width: 3px;
-		}
+			letter-spacing: 1px;
+
+			padding: 3px 20px ;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #217ed1;
+            border: none;
+            border-radius: 25px;
+            box-shadow: 0 4px #999;
+        }
+
+        .button:hover {
+        	background: linear-gradient(to bottom right, #005c97,  #363795);
+        	box-shadow: 0 2px #666;
+            transform: translateY(4px);
+             }
+
+
 		div.last{
 			background: linear-gradient(to bottom right, #005c97, #363795);
-		}
-		th{
-			text-align: left;
-			padding-left: 5px;
-		}
-		td{
-			padding-left: 40px;
-
-		}
-		table{
-			font-size: 19px;
-			width: 1000px;
-			color: white;
-			border-spacing: 3px;
 		}
 		a.link{
 			color: white;
 		}
-		img.img{
-			width: 100%;
-			height: 110px;
+		a.link:hover{
+			color: white;
 		}
+		div.top{
+			background-color: white;
+			border-bottom-style: solid;
+			border-bottom-width: 3px; 
+			border-bottom-color: #363795;
+		}
+		img.img{
+			width: 75%;
+		}
+
 	</style>
 	
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
-	<div class="img"><center><img  class="img" src="Hack.png"></center></div>
+	<div class="top">
+		<img class="img" src="hack_1a.png">
+	</div>
+	<br>
+
 	<p class ="title">
 		<i><b>Introduction</b></i>
 	</p>
@@ -83,61 +103,77 @@
 	<p class="para">
 		For fulfilling our mission we need skilled and determined people. We need people who share our vision. People interested in our vision and would also like to offer their services to us, can join our organization by sending their details in form of job application. Those who are already registered can simply login.
 	</p>
-	<hr>
+	<hr class="line">
 	<p><center>
 		
-		<a class="s" href="C:/Users/abhir_000/Desktop/hackathn/hack_login.html"><button class="button" ><i><b>Login</b></i></button></a>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="C:/Users/abhir_000/Documents/GitHub/Technogens_SIH/website/aman/index2.html">
+			<button class="button" ><i><b>Login</b></i></button></a>
+
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			
-		<a class="s" href="C:/Users/abhir_000/Desktop/hackathn/hack_reg.html"><button class="button"><i><b>Register</b></i></button></a>
+		<a href="C:/Users/abhir_000/Desktop/hackathn/hack_reg.html">
+			<button class="button"><i><b>Register</b></i></button></a>
 		
 	</center>
 	</p>
+	<br>
 	<div class="last">
-		<table>
-			<tr>
-				<th>
-					<b><i>Contact Us :-</i></b>
-				</th>
-				<th>
-					<b><i>Useful links :-</i></b>
-				</th>
-			</tr>
-			<tr>
-			    <td><font color="#4e4e8c">.</font></td>
-			    <td></td>
-			</tr>
-			<tr>
-				<td>NIELIT Bhavan,</td>
-				<td><a class="link" href="http://meity.gov.in">meity.gov.in</a></td>
-			</tr>
-			<tr>
-				<td>Plot No. 3, PSP Pocket, Sector-8,</td>
-				<td><a class="link" href="http://india.gov.in">India.gov.in</a></td>
-			</tr>
-			<tr>
-				<td>Dwarka, New Delhi-110077,</td>
-				<td><a class="link" href="http://mygov.in">mygov.in</a></td>
-			</tr>
-			<tr>
-			    <td>Helpline No. (Toll Free) - 1800116511</td>
-			    <td><a class="link" href="http://rtionline.gov.in">rtionline.gov.in</a></td>
-			</tr>
-			<tr>
-				<td>Phone:- 91-11-2436 3330 with 6 lines</td>
-				<td><a class="link" href="http://mail.gov.in">mail.gov.in</a></td>
-			</tr>
-			<tr>
-				<td>Fax:- 91-11-2436 3335</td>
-			</tr>
-			<tr>
-				<td>Email:- contact@nielit.gov.in</td>
-				<td><img src="hack2.png"></td>
-			</tr>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<font size="4%" color="white" face="Bookman Old Style">
+				<p><h3><i> Contact Us :-</i></h3></p>
+				<br>
+				<p>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				    NIELIT Bhavan,
+			    <br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				    Plot No. 3, PSP Pocket, Sector-8,
+				<br>		
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				    Dwarka, New Delhi-110077,
+			    <br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				    Helpline No.- 1800116511
+			    <br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				    Phone:- 91-11-2436 3330 
+			    <br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				    Fax:- 91-11-2436 3335
+			    <br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				    Email:- contact@nielit.gov.in
+			    </p>
+				<br>
+			</div>
+			<div class="col-sm-4">
+				<p><h3><i> Useful links :-</i></h3></p>
+				<br>
+		        <p>
+		        	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		        	<a class="link" href="http://meity.gov.in">meity.gov.in</a>
+		        <br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a class="link" href="http://india.gov.in">India.gov.in</a>
+				<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a class="link" href="http://mygov.in">mygov.in</a>
+				<br>
+			    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			    	<a class="link" href="http://rtionline.gov.in">rtionline.gov.in</a>
+			    <br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a class="link" href="http://mail.gov.in">mail.gov.in</a></p>
+				<br>
+					
+					<img src="hack2.png">
+				</p>
+			</font>
+	        </div>
+	    </div>
+	</div>
 
-		</table>
-	</div>	
 </body>
 </html>
