@@ -13,14 +13,14 @@
   <style type="text/css">
 
     select.std{
-      border-style: inset;
+      border-style: all;
       width: 250px;
-      height: 38px;
+      height: 40px;
       border-width: 4px;
       border-collapse: collapse;
       border-style: all;
       border-color: #d3d3d3;
-      
+      border-radius: 25px;
     }
     option{
       font-family: Aparajita;
@@ -29,6 +29,7 @@
     option.select{
       font-family: Aparajita;
       font-size: 30px;
+
       
     }
     h1{
@@ -45,15 +46,23 @@
       font-size: 32px;
     }
     input{
-      border-style: all;
+      border-style: solid;
       width: 250px;
-      height: 38px;
+      height: 40px;
       border-width: 4px;
       border-collapse: collapse;
       border-style: all;
       border-color: #d3d3d3;
       font-family: Aparajita;
       font-size: 30px;
+      border-radius: 25px;
+      padding-left: 10px;
+    }
+    input:focus {
+      outline:none;
+    }
+    select:focus {
+      outline:none;
     }
     input[type=number]::-webkit-inner-spin-button, 
     input[type=number]::-webkit-outer-spin-button { 
